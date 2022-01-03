@@ -37,34 +37,34 @@ Users should be able to:
 
 ##### Deliveryman routes:
 
-POST: /deliveryman - Create a deliveryman
-Body content: { "username": "DELIVERYMAN_USERNAME", "password": "DELIVERYMAN_PASSWORD" }
-
-GET: /deliveryman/deliveries - List deliveries deliveryman
-Header content: BEARER TOKEN (received after deliveryman authenticating)
-
-PUT: /delivery/updateDeliveryman/ID_PRODUCT - Accept delivery
-Header content: BEARER TOKEN (received after deliveryman authenticating)
-
-PUT: /delivery/updateDeliveryman/ID_PRODUCT - End delivery
-Header content: BEARER TOKEN (received after deliveryman authenticating)
+- POST: /deliveryman - Create a deliveryman
+- Body content: { "username": "DELIVERYMAN_USERNAME", "password": "DELIVERYMAN_PASSWORD" }
+- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+- GET: /deliveryman/deliveries - List deliveries deliveryman
+- Header content: BEARER TOKEN (received after deliveryman authenticating)
+- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+- PUT: /delivery/updateDeliveryman/ID_PRODUCT - Accept delivery
+- Header content: BEARER TOKEN (received after deliveryman authenticating)
+- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+- PUT: /delivery/updateDeliveryman/ID_PRODUCT - End delivery
+- Header content: BEARER TOKEN (received after deliveryman authenticating)
 
 ##### Deliveries routes:
 
-POST: /delivery - Create delivery (using for client)
-Body content: { "item_name": "PRODUCT NAME" }
-Header content: BEARER TOKEN (received after client authenticating)
-
-GET: /delivery/available - List deliveries available (using for deliveryman)
-Header content: BEARER TOKEN (received after deliveryman authenticating)
+- POST: /delivery - Create delivery (using for client)
+- Body content: { "item_name": "PRODUCT NAME" }
+- Header content: BEARER TOKEN (received after client authenticating)
+- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+- GET: /delivery/available - List deliveries available (using for deliveryman)
+- Header content: BEARER TOKEN (received after deliveryman authenticating)
 
 ##### Authenticate routes:
 
-POST: /client/authenticate - Authenticate a client
-Body content: { "username": "CLIENT_USERNAME", "password": "CLIENT_PASSWORD" }
-
-POST: /deliveryman/authenticate - Authenticate a deliveryman
-Body content: { "username": "DELIVERYMAN_USERNAME", "password": "DELIVERYMAN_PASSWORD" }
+- POST: /client/authenticate - Authenticate a client
+- Body content: { "username": "CLIENT_USERNAME", "password": "CLIENT_PASSWORD" }
+- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+- POST: /deliveryman/authenticate - Authenticate a deliveryman
+- Body content: { "username": "DELIVERYMAN_USERNAME", "password": "DELIVERYMAN_PASSWORD" }
 
 ## Development process
 
