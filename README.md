@@ -29,11 +29,11 @@ Users should be able to:
 
 ##### Client routes:
 
-POST: /client - Create a client
-Body content: { "username": "CLIENT_USERNAME", "password": "CLIENT_PASSWORD" }
+- POST: /client - Create a client
+- Body content: { "username": "CLIENT_USERNAME", "password": "CLIENT_PASSWORD" }
 
-GET: /client/deliveries - List deliveries client
-Header content: BEARER TOKEN (received after client authenticating)
+- GET: /client/deliveries - List deliveries client
+- Header content: BEARER TOKEN (received after client authenticating)
 
 ##### Deliveryman routes:
 
